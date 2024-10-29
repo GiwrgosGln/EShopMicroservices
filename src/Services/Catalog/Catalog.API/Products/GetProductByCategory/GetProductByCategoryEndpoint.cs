@@ -19,7 +19,7 @@ public class GetProductByCategoryEndpoint : ICarterModule
             return Results.Ok(response);
         })
         .WithName("GetProductByCategory")
-        .Produces<GetProductByCategoryResult>(StatusCodes.Status201Created)
+        .Produces<GetProductByCategoryResult>(StatusCodes.Status200OK)
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .WithSummary("Get Product By Category")
         .WithDescription("Get Product By Category");
